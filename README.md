@@ -1,10 +1,10 @@
 # custom_card_person_presence
-this is a Custom Card for the awsome Home Assistant "theme" Minimal-Lovelace-UI
-tested With ESPresence and ESPHome
+this is a Custom Card for the awsome Home Assistant "theme" Minimal-Lovelace-UI.
+Tested with ESPresence and ESPHome
 
 ![191694379-b8250f5c-5036-47bc-878c-d064d7060d21](https://user-images.githubusercontent.com/66369207/191695033-b881dee4-7b07-459a-9d1b-f34146e9e0e8.png)
 
-This Custom Card adds fuctionality to display current room
+This Custom Card adds fuctionality to display current room in the Lable if the selected Person is Home
 
         - type: 'custom:button-card'
           template: custom_card_person_presense
