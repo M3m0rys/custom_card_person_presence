@@ -17,4 +17,4 @@ This Custom Card adds fuctionality to display current room in the Lable if the s
             ulm_card_person_presense_room: <room sensor>        #defines the Text of the room lable
             ulm_address: <geocoded sensor>
 
-Room Sensor can be defined as the BLE_sensor if you use ESPresence or a input_text witch recives text via a automation if you use ESPHome.
+Room Sensor can be defined as the BLE_sensor if you use ESPresence or a Template sensor if you use ESPHome.
