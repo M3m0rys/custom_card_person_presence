@@ -1,5 +1,6 @@
 # custom_card_person_presence
 this is a Custom Card for the awsome Home Assistant "theme" Minimal-Lovelace-UI
+![image](https://user-images.githubusercontent.com/66369207/191694379-b8250f5c-5036-47bc-878c-d064d7060d21.png)
 
 This Custom Card adds fuctionality to display current room
 
