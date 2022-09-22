@@ -6,6 +6,8 @@ Tested with ESPresence and ESPHome
 
 This Custom Card adds fuctionality to display current room in the Lable if the selected Person is Home
 
+# Lovelace Config
+
         - type: 'custom:button-card'
           template: custom_card_person_presense
           entity: <person>
@@ -18,3 +20,16 @@ This Custom Card adds fuctionality to display current room in the Lable if the s
             ulm_address: <geocoded sensor>
 
 Room Sensor can be defined as the BLE_sensor if you use ESPresence or a Template sensor if you use ESPHome.
+
+# Template Sensor 
+
+        template:
+          - sensor:
+              - name: "person_room"
+                state: >-
+                  {% if is_state('binary_sensor.person_room1','on') %}Room1
+                  {% elif is_state('binary_sensor.person_room2','on') %}Room2
+                  {% elif is_state('binary_sensor.person_room3','on') %}Room3
+                  {% elif is_state('binary_sensor.person_room4','on') %}Room4
+                  {% else %} Unknown
+                  {% endif %}
